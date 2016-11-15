@@ -1,0 +1,37 @@
+<html>
+<head>
+<!--[if lte IE 7]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<style type="text/css">
+body {padding:0;margin:0;}
+</style>
+<!--<![endif]-->
+</head>
+<body>
+<div class="adnl_zone id_8969"></div>
+<script type="text/javascript">
+var getParameterByName = function(name) {
+	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"), results = regex.exec(location.search);
+	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+};
+	var ADNL = [];
+	ADNL.push(["setConstant", "SCAN_ZONE_CLASS", "adnl_zone"]);
+	ADNL.push(["setConstant", "CDN_URL", "//cdn.castplatform.com"]);	
+	ADNL.push(["setConstant", "SUBID", getParameterByName('subid')]);
+	ADNL.push(["setConstant", "SITEID", 208259]);
+	
+	ADNL.push(["scanZones"]);
+	ADNL.push(["initialize", "1"]);
+
+	
+		
+	(function (d) {
+		var s = d.createElement('script');
+		s.src = "//cdn.castplatform.com/scripts/1/adnl.min.js";
+		s.type = "text/javascript";
+		d.getElementsByTagName('head')[0].appendChild(s);
+	})(document);
+</script>
+</body>
+</html>

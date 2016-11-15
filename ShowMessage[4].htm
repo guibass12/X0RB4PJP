@@ -1,0 +1,85 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1"><title>
+	Show Message
+</title><link id="smStyleSheet" rel="stylesheet" type="text/css" href="CSS/SMStylesheet.css" /><link id="smStyleSheetRTL" rel="stylesheet" type="text/css" /><script type="text/vbscript" src="ScriptHandler.ashx?sn=ShowMessageScripts&ct=text/vbscript&h=142109897"></script>
+
+    <script type="text/vbscript">
+        Function StartUp()
+            Dim iLocale
+            iLocale = GetLocale()
+            
+			If iLocale <> 1033 Then
+                SetLocale(1033)
+            End If 
+
+            Call Main()
+
+            If iLocale <> 1033 Then
+                SetLocale(iLocale)
+            End If 
+        End Function
+    </script>
+    <script type="text/javascript">
+        function OpenUrlUsingJS(url) {
+            window.external.GetParam(PLATFORMDSP).GetProperty(SM_PROP_PROVIDER_MSCIPT, false).OpenUrl("" + url + "", 0, 0, "&param=value");
+        }
+    </script>
+</head>
+<body onload="StartUp()">
+    <form name="form1" method="post" action="ShowMessage.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExNDc0MjAwOTZkZGx3U7/MMFZ4XG1TrZktRoZ12vTi" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AA244C9B" />
+</div>        
+        <div id="divMain" style="margin:0; padding:0"></div>
+        <input name="hdnMessageID" type="hidden" id="hdnMessageID" />
+        <input name="hdnSystemLCID" type="hidden" id="hdnSystemLCID" value="1046" />
+        <input name="hdnMessageCount" type="hidden" id="hdnMessageCount" />
+        <input name="hdnCategory" type="hidden" id="hdnCategory" />
+        <input name="hdnPriority" type="hidden" id="hdnPriority" />
+        <input name="hdnAffid" type="hidden" id="hdnAffid" value="885-300" />
+        <input name="hdnAcctID" type="hidden" id="hdnAcctID" />
+        <input name="hdnProductKey" type="hidden" id="hdnProductKey" />
+        <input name="hdnHeight" type="hidden" id="hdnHeight" />
+        <input name="hdnWidth" type="hidden" id="hdnWidth" />
+        <input name="hdnMsgPresent" type="hidden" id="hdnMsgPresent" />
+        <input name="hdnFlowType" type="hidden" id="hdnFlowType" value="ClientModule" />
+        <input name="hdnMsgXMLFromConsole" type="hidden" id="hdnMsgXMLFromConsole" />
+        <input name="hdnTemplateIDFromConsole" type="hidden" id="hdnTemplateIDFromConsole" />
+        <input name="hdnCurrentUTCTime" type="hidden" id="hdnCurrentUTCTime" value="04/20/2016 15:12:04" />      
+        <input name="hdnCurrentUTCTimeInSeconds" type="hidden" id="hdnCurrentUTCTimeInSeconds" value="1461165111" />    
+        <input name="hdnMaxMsgViewHistoryID" type="hidden" id="hdnMaxMsgViewHistoryID" />
+        <input name="hdnAutoCloseSeconds" type="hidden" id="hdnAutoCloseSeconds" />
+        <input name="hdnDeActivationDate" type="hidden" id="hdnDeActivationDate" />
+        <input name="m_MsgType" type="hidden" id="m_MsgType" />
+        <input name="m_IsIpt" type="hidden" id="m_IsIpt" />
+        <input name="m_HiddenApplicationVersion" type="hidden" id="m_HiddenApplicationVersion" value="14.0" />
+        <input name="m_HiddenIptValidTillInSeconds" type="hidden" id="m_HiddenIptValidTillInSeconds" />
+        <input name="m_HiddenCurrentUtcInSeconds" type="hidden" id="m_HiddenCurrentUtcInSeconds" />
+        <input name="m_IsLaunchActWiz" type="hidden" id="m_IsLaunchActWiz" />
+        <!--<input name="m_HiddenActWizPath" type="hidden" id="m_HiddenActWizPath" />
+        <input name="m_HiddenActWizArgs" type="hidden" id="m_HiddenActWizArgs" />-->
+        <input name="m_HiddenUICntPath" type="hidden" id="m_HiddenUICntPath" />
+        <input name="m_HiddenUICntArgs" type="hidden" id="m_HiddenUICntArgs" />
+        <input name="m_hdnWin8Metro" type="hidden" id="m_hdnWin8Metro" isvalid="" toasttype="" msgheader="" msgbody="" />
+        <input name="hdnSAFUICntPath" type="hidden" id="hdnSAFUICntPath" value="C:\Program Files (x86)\McAfee\SiteAdvisor\saUi.exe" />
+        <input name="hdnSAFUICntArgs" type="hidden" id="hdnSAFUICntArgs" value="  /saFreemium /postinstallpage" />
+        <input name="m_hiddenUnsubscribeUrl" type="hidden" id="m_hiddenUnsubscribeUrl" />
+        <input name="m_hdnCohortDetails" type="hidden" id="m_hdnCohortDetails" isruletoexecute="" ruleid="" rulecommand="" negaterule="" />
+	    <input name="hdnEncodedAccountID" type="hidden" id="hdnEncodedAccountID" />
+        <input name="hdnEncodedHardwareID" type="hidden" id="hdnEncodedHardwareID" />
+	    <input name="hdnEnableIPTbySegment" type="hidden" id="hdnEnableIPTbySegment" value="0" />
+        <input name="hdnIPTSegment" type="hidden" id="hdnIPTSegment" />
+        <input name="hdnIPTSegmentVersion" type="hidden" id="hdnIPTSegmentVersion" />
+        <input name="hdnSubType" type="hidden" id="hdnSubType" />
+        <input name="hdnParentAffId" type="hidden" id="hdnParentAffId" />
+    </form>
+</body>
+</html>
